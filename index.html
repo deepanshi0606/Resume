@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="resume.css">
+    <script src="https://kit.fontawesome.com/c383dd12a7.js" crossorigin="anonymous"></script>
+    <script src="resume.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#education">Education</a></li> -->
+                 <!-- <li><a href="#certificates">Certificates</a></li> -->
+                <li><a href="#experience">Experience</a></li>
+				<!-- <li><a href="#tskills">Technical Skills</a></li> -->
+                <li><a href="#skills">Skills</a></li>
+                 
+                <li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="main-text">
+            <h1>Hi! <br> I'm Deepanshi Sharma. </h1>
+        </div>
+    </header>
+
+<!-- About Section -->
+
+    <div id="about">
+        <div class="row">
+            <div class="col1">
+                <img src="" alt="">
+            </div>
+            <div class="col2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsam totam quae? Aperiam temporibus porro iusto quidem eius culpa eum asperiores, adipisci, similique blanditiis veritatis quod placeat quibusdam, molestiae modi.</p>
+
+                <div class="sub-headings">
+                    <p class="sh-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="sh-links" onclick="opentab('certificates')">Certificates</p>
+                </div>
+
+                <div class="sh-contents active-tab" id="education">
+                    <ul>
+                        <li><span>Banasthali Vidyapith, Rajasthan— B.Tech</span></li>
+                        <li><font size="2px">July 2020 - June 2024</font></li>
+                        <li><b>Branch:</b> Information Technology</li>
+                        <li><b>CGPA : </b>8.73</li>
+                        <li><span>DAV Centenary Public School, Rajasthan— 12th</span></li>
+                        <li><font size="2px">April 2019 - May 2020</font></li>
+                        <li><b>Board:</b> CBSE</li>
+                        <li><b>Percentage:</b> 76.8%</li>
+                        <li><span>DAV Centenary Public School, Rajasthan— 10th</span></li>
+                        <li> <font size="2px">April 2017 - May 2018</font> </li>
+                        <li><b>Board: </b>CBSE </li>
+                        <li><b>Percentage: </b>82%</li>
+                    </ul>
+                </div>
+
+                <div class="sh-contents" id="certificates">
+                    <ul>
+                <li> ‘A’ Certificate in
+                    National Cadet Corps
+                    (NCC)</li>
+                    <li> Participated in VC’
+                        Innovation Challenge
+                        (Hackathon)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience Section -->
+
+    <div id="experience">
+        <div class="container">
+            <h1 class="sub-title">Experience</h1>
+            <div class="exp-list">
+                <div>
+                    <h2>exp1</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil exercitationem, voluptas et aliquid doloremque iure repellendus dolor, nisi odit, vero quisquam facilis praesentium quis ex! Hic ratione nemo eius quae?</p>
+                </div>
+                <div>
+                    <h2>exp2</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque ex possimus, minus deserunt aspernatur delectus cumque quibusdam rem error dolorum, libero aliquid, ullam ad obcaecati quam? Sequi totam blanditiis maxime?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="pro-list">
+                    <div class="pros">
+                        <img src="1.jpg" alt="">
+                        <div class="pro-desc">
+                            <h3>Project1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ratione libero itaque doloremque eligendi mollitia repellendus ex dolor nisi rem veniam, aspernatur dolorum impedit temporibus at deserunt iure voluptate repudiandae.</p>
+                        </div>
+                        <a href="#"></a>
+                    </div>
+
+                    <div class="pros">
+                        <img src="1.jpg" alt="">
+                        <div class="pro-desc">
+                            <h3>Project2</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ratione libero itaque doloremque eligendi mollitia repellendus ex dolor nisi rem veniam, aspernatur dolorum impedit temporibus at deserunt iure voluptate repudiandae.</p>
+                        </div>
+                        <a href="#"></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><img src="" alt=""> sharmadeepanshi2002@gmail.com</p>
+                    <p>9999999999</p>
+                    <div class="social-icons"><a href="https://in.linkedin.com/company/linkedin"><img src="linkedin_icon.png" alt=""></a>
+                    </div>
+                    <a href="Deepanshi Resume.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+
+                        <input type="email" name="Email" placeholder="Your Email" required>
+
+                        <textarea name="Message" rows="10" placeholder="Write your message here!"></textarea><br><br>
+
+                        <span id="msg"></span>
+
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+	<footer>
+		<p>Copyright © Deepanshi Sharma</p>
+	</footer>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-300px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxwG2-xPTf1LMoZdLVttTXyiMULTdGTRFzeXgfqHebqCrxgRhSJHyKl4HAs42gdRAMO/exec'
+
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!" 
+
+            setTimeout(function(){
+                msg.innerHTML = "" 
+            }, 5000)
+
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
